@@ -2,30 +2,18 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="options.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/options.xml" />
+			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurorabuilderelements/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
-	<element name="Chanegeling Metamorphosis" type="Feat" source="TeamStupEberron" id="TSE_CHANGELING_METAMORPHOSIS">
-		<requirements>ID_WOTC_ERLW_RACE_CHANGELING</requirements>
-		<prerequisite>Changeling</prerequisite>
+	<element name="Free Feat at level 1" type="Option" source="TeamStupEberron" id="ID_HOUSERULES_FREE_FEAT">
 		<description>
-			<p><em>Prerequisite: Changeling</em></p>
-			<p>Your ability to shapechange is more than skin deep. Increase your Constitution score by 1, to a maximum of 20. In addition, when you use your Shapechanging trait, you can choose one of the following benefits, which lasts until you use your Shapechanging trait again. Some of these benefits require specific physical features, such as gills or claws, that can be seen by observers.</p>
-			<ul>
-				<li><b>Aquatic Adaptation.</b> You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.</li>
-				<li><b>Darkvision.</b> You adapt your eyes and gain darkvision with a range of 60 feet.</li>
-				<li><b>Natural Weapons.</b> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes.</li>
-			</ul>
+			<p>Some DMs may grant a free feat for your characters at level 1. Check this if your DM does it.</p>
 		</description>
-		<sheet>
-			<description>When you use your Shapechanging trait, you can choose one of the following benefits, which lasts until you use your Shapechanging trait again. Some of these benefits require specific physical features, such as gills or claws, that can be seen by observers.
-			    --Aquatic Adaptation: You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.
-			    --Darkvision: You adapt your eyes and gain darkvision with a range of 60 feet.
-			    --Natural Weapons: You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes.
-			</description>
-		</sheet>
+		<setters>
+			<set name="short">Free feat at level 1.</set>
+		</setters>
 		<rules>
-			<stat name="constitution" value="1" />
+			<select type="Feat" name="Free Feat (Level 1)"/>
 		</rules>
 	</element>
 </elements>	
