@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -12,13 +12,13 @@
 			<p><em>Prerequisite: Changeling</em></p>
 			<p>Your ability to shapechange is more than skin deep. Increase your Constitution score by 1, to a maximum of 20. In addition, when you use your Shapechanging trait, you can choose one of the following benefits, which lasts until you use your Shapechanging trait again. Some of these benefits require specific physical features, such as gills or claws, that can be seen by observers.</p>
 			<ul>
-				<li><b>Aquatic Adaptation.</b> You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.</li>
+				<li><b>TESTAquatic Adaptation.</b> You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.</li>
 				<li><b>Darkvision.</b> You adapt your eyes and gain darkvision with a range of 60 feet.</li>
 				<li><b>Natural Weapons.</b> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>When you use your Shapechanging trait, you can choose one of the following benefits, which lasts until you use your Shapechanging trait again. Some of these benefits require specific physical features, such as gills or claws, that can be seen by observers.
+			<description>TESTWhen you use your Shapechanging trait, you can choose one of the following benefits, which lasts until you use your Shapechanging trait again. Some of these benefits require specific physical features, such as gills or claws, that can be seen by observers.
 			    --Aquatic Adaptation: You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.
 			    --Darkvision: You adapt your eyes and gain darkvision with a range of 60 feet.
 			    --Natural Weapons: You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes.
