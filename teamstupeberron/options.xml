@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurorabuilderelements/main/teamstupeberron/feats.xml" />
+			<file name="options.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/options.xml" />
 		</update>
 	</info>
 	<element name="Chanegeling Metamorphosis" type="Feat" source="TeamStupEberron" id="TSE_CHANGELING_METAMORPHOSIS">
