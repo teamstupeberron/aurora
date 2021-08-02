@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-bread.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/race-bread.xml" />
+		</update>
+	</info>	
+	<element name="Possessed Bread Roll" type="Race" source="Team StupEberron" id="ID_RACE_BREAD">
+		<description>
+			<p>SEEMS LIKE A CHARACTER CONCEPT LIKE THIS WAS THOUGHT UP BY A PLAYER WHO JUST WANTS TO LOAF AROUND.</p>
+			<p><i>-Commentor on reddit, now deleted</i></p>
+			<h4>UNNATURAL EXISTENCE</h4>
+			<p>By some heinous act of dark magic, a fiend and the soul of a once living humanoid spirit have possessed a piece of bread. Perhaps the humanoid attempted to make a deal with the fiend for lichdom and something went terribly, terribly wrong. Maybe a wizard's polymorph spell transformed an alread ypossessed person. Whatever the origin story, There now exists a possessed bread roll, and both your party and your DM will <i>never</i> forgive you for bringing this upon them.</p>
+			<h4>POSSESSED BREAD ROLL NAMES</h4>
+			<p>Bread Rolls do not have names. They are bread. Most Possessed Bread Rolls will take on the name their humanoid spirit had in life. Few, however, will take on the name of the fiend possessing them instead.</p>
+			<h4>POSSESSED BREAD ROLL TRAITS</h4>
+			<p>Your Possessed Bread Roll character has the following traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1, and your Charisma score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> The fiendish magic that brought you to life prolongs your life past the average bread roll. Possessed Bread Rolls mature and age at the same rate as the humanoid soul possessing it.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> The duality of Possessed Bread Rolls complicates its alignment. The fiendish possessor drives it toward evil behavior. The humanoid soul drives it towards the alignment it had in life.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 5 feet.</p>
+			<p class="indent"><strong><em>Baked Resilience.</em></strong> Certain things that would ail a normal living creature do not bother you, reflected by the following benefits:</p>
+			<ul>
+				<li>You have advantage on saving throws against being poisoned, and you have resistance to poison damage.</li>
+				<li>You don't need to eat, drink, or breathe.</li>
+				<li>You are immune to disease.</li>
+				<li>You don't need to sleep, and magic can't put you to sleep.</li>
+			</ul>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Your connection to the fiendish entity possessing you has given you limited access to its superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Doughy Nature.</em></strong> Your bread-like organic structure gives you weaknesses reflected by the following detriments:</p>
+			<ul>
+				<li>You cannot speak.</li>
+				<li>You cannot interact with creatures or objects in such a way that would require fingers, hands, arms, legs, or a mouth.</li>
+				<li>You have disadvantage on Wisdom(Perception) checks that rely on hearing or smelling.</li>
+			</ul>
+			<p class="indent"><strong><em>Face Projection.</em></strong> You can magically project the image of a face on the bread roll that represents your head. As an action, you can summon a projection of the face you had in life. When you do this, your face appears, and you can speak through it with the ovice you had in life for 1 minute. Alternatively, you can use this feature to summon the face of your fiendish possessor and use his voice. Whenever you make a Charisma (intimidation) check with your fiendish face, roll a d4 and add it to the check.</p>
+			<p class="indent"><strong><em>Fiendish Charm.</em></strong> Your connection to your fiendish possessor inspires your beguilement. You gain proficiency in the Deception, Performance, or Persuasion skill. You have advantage of Charisma checks made to convince others that you are a true humanoid and not, in fact, a piece of bread.</p>
+			<p class="indent"><strong><em>Hellish Psionics.</em></strong> You know the mage hand cantrip, and can cast it without the somatic component. The hand can attack and activate magic items when you cast the cantrip with this trait. Additionally you can have two hands active at a time, so long as one of the hands is used to hold your bread body. If you use the hand to hold yourself, you can move that hand using movement instead of an action and it lasts until dispelled.</p>
+			<p class="indent"><strong><em>Mental Casting</em></strong> You can cast spells with verbal components, despite your inability to speak.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" />
+			<stat name="wisdom" value="1" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="innate speed" value="5" bonus="base" />
+			<grant type="Racial Trait" id="ID_TSE_RACIAL_TRAIT_BREAD_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_TSE_RACIAL_TRAIT_BREAD_FIENDISH_CHARM" />
+			<grant type="Racial Trait" id="ID_TSE_RACIAL_TRAIT_DOUGHY_NATURE" />
+			<grant type="Racial Trait" id="ID_TSE_RACIAL_TRAIT_FACE_PROJECTION" />
+			<grant type="Racial Trait" id="ID_TSE_RACIAL_TRAIT_HELLISH_PSIONICS" />
+			<grant type="Racial Trait" id="ID_TSE_RACIAL_TRAIT_MENTAL_CASTING" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language, Bread" supports="Standard||Exotic" number="2" />
+		</rules>
+	</element>
+	<element name="Baked Resilience" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_BREAD_RESILIENCE">
+		<description>
+			<p><strong><em>Baked Resilience.</em></strong> Certain things that would ail a normal living creature do not bother you, reflected by the following benefits:</p>
+			<ul>
+				<li>You have advantage on saving throws against being poisoned, and you have resistance to poison damage.</li>
+				<li>You don't need to eat, drink, or breathe.</li>
+				<li>You are immune to disease.</li>
+				<li>You don't need to sleep, and magic can't put you to sleep.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Certain things that would ail a normal living creature do not bother you, reflected by the following benefits:
+				--You have advantage on saving throws against being poisoned, and you have resistance to poison damage.
+				--You don't need to eat, drink, or breathe.
+				--You are immune to disease.
+				--You don't need to sleep, and magic can't put you to sleep.
+			</description>
+		</sheet>
+	</element>
+	<element name="Doughy Nature" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_DOUGHY_NATURE">
+		<description>
+			<p>Your bread-like organic structure gives you weaknesses reflected by the following detriments:</p>
+			<ul>
+				<li>You cannot speak.</li>
+				<li>You cannot interact with creatures or objects in such a way that would require fingers, hands, arms, legs, or a mouth.</li>
+				<li>You have disadvantage on Wisdom(Perception) checks that rely on hearing or smelling.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your bread-like organic structure gives you weaknesses reflected by the following detriments:
+				--You cannot speak.
+				--You cannot interact with creatures or objects in such a way that would require fingers, hands, arms, legs, or a mouth.
+				--You have disadvantage on Wisdom(Perception) checks that rely on hearing or smelling.
+			</description>
+		</sheet>
+	</element>
+	<element name="Face Projection" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_FACE_PROJECTION">
+		<description>
+			<p><strong><em>Face Projection.</em></strong> You can magically project the image of a face on the bread roll that represents your head. As an action, you can summon a projection of the face you had in life. When you do this, your face appears, and you can speak through it with the ovice you had in life for 1 minute. Alternatively, you can use this feature to summon the face of your fiendish possessor and use his voice. Whenever you make a Charisma (intimidation) check with your fiendish face, roll a d4 and add it to the check.</p>
+		</description>
+		<sheet>
+			<description>You can magically project the image of a face on the bread roll that represents your head. As an action, you can summon a projection of the face you had in life. When you do this, your face appears, and you can speak through it with the ovice you had in life for 1 minute. Alternatively, you can use this feature to summon the face of your fiendish possessor and use his voice. Whenever you make a Charisma (intimidation) check with your fiendish face, roll a d4 and add it to the check.
+			</description>
+		</sheet>
+	</element>
+	<element name="Fiendish Charm" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_BREAD_FIENDISH_CHARM">
+		<description>
+			<p>Your connection to your fiendish possessor inspires your beguilement. You gain proficiency in the Deception, Performance, or Persuasion skill. You have advantage of Charisma checks made to convince others that you are a true humanoid and not, in fact, a piece of bread.</p>
+		</description>
+		<sheet display="false">
+			<description>Your connection to your fiendish possessor inspires your beguilement. You gain proficiency in the Deception, Performance, or Persuasion skill. You have advantage of Charisma checks made to convince others that you are a true humanoid and not, in fact, a piece of bread.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Fiendish Charm" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" number="1" />
+		</rules>
+	</element>
+	<element name="Hellish Psionics" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_HELLISH_PSIONICS">
+		<description>
+			<p><strong><em>Hellish Psionics.</em></strong> You know the mage hand cantrip, and can cast it without the somatic component. The hand can attack and activate magic items when you cast the cantrip with this trait. Additionally you can have two hands active at a time, so long as one of the hands is used to hold your bread body. If you use the hand to hold yourself, you can move that hand using movement instead of an action and it lasts until dispelled.</p>
+		</description>
+		<sheet>
+			<description>You know the mage hand cantrip, and can cast it without the somatic component. The hand can attack and activate magic items when you cast the cantrip with this trait. Additionally you can have two hands active at a time, so long as one of the hands is used to hold your bread body. If you use the hand to hold yourself, you can move that hand using movement instead of an action and it lasts until dispelled.
+			</description>
+		</sheet>
+		<rules>
+		  <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+		</rules>
+	</element>
+	<element name="Mental Casting" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_MENTAL_CASTING">
+		<description>
+			<p><strong><em>Mental Casting.</em></strong> You can cast spells with verbal components, despite your inability to speak.</p>
+		</description>
+		<sheet>
+			<description>You can cast spells with verbal components, despite your inability to speak.
+			</description>
+		</sheet>
+	</element>
+</elements>
