@@ -3,7 +3,7 @@
 	<info>
 		<name>Team StupEberron</name>
 		<description>Custom content to play 5th Edition in the Team Stupendous Eberron world.</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="teamstupeberron.index" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron.index" />
 		</update>
 	</info>
@@ -11,6 +11,7 @@
 		<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		<file name="options.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/options.xml" />
 		<file name="race-bread.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/race-bread.xml" />
+		<file name="sources.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/sources.xml" />
 		<file name="tashas-cauldron-of-everything.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/tashas-cauldron-of-everything.xml" />
 	</files>
 </index>
