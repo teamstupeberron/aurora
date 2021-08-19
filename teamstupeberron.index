@@ -3,7 +3,7 @@
 	<info>
 		<name>Team StupEberron</name>
 		<description>Custom content to play 5th Edition in the Team Stupendous Eberron world.</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="teamstupeberron.index" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron.index" />
 		</update>
 	</info>
