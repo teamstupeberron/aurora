@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.6">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -27,5 +27,16 @@
 		<rules>
 			<stat name="constitution" value="1" />
 		</rules>
+	</element>
+	<element name="Hero's Fortune" type="Feat" source="Team StupEberron" id="TSE_HEROS_FORTUNE">
+		<description>
+			<p>The maximum number of hero points you can have at any one time is increased to 5.</p>
+			<p>Normal: You can have no more than 3 hero points at one time.</p>
+		</description>
+		<sheet>
+			<description>
+			The maximum number of hero points you can have at any one time is increased to 5.
+			</description>
+		</sheet>
 	</element>
 </elements>	

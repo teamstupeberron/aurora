@@ -5,7 +5,7 @@
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
-    <element name="Cone of Silence" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_CONE_OF_SILENCE">
+    <element name="Cone Of Silence" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_CONE_OF_SILENCE">
         <description>
             <p>When you push the button on this item once a day, it creates a sphere of silence.</p>
             <p class="indent">Rules go here.</p>
