@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	<!-- Adventurers League -->
 	<element name="Team StupEberron" type="Source" source="Core" id="ID_TSE_SOURCE">
 		<description>
 			<![CDATA[<p>Eberron's world? Kit's world? OUR WORLD.</p>]]>
