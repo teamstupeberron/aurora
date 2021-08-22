@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<update version="0.0.3">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/sources.xml" />
+		</update>
+	</info>
 	<element name="Team StupEberron" type="Source" source="Core" id="ID_TSE_SOURCE">
 		<description>
 			<![CDATA[<p>Eberron's world? Kit's world? OUR WORLD.</p>]]>
