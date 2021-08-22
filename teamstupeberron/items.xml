@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.5">
+			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
+		</update>
+	</info>
+    <element name="Cone of Silence" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_CONE_OF_SILENCE">
+        <description>
+            <p>When you push the button on this item once a day, it creates a sphere of silence.</p>
+            <p class="indent">Rules go here.</p>
+            <p class="indent">Moar rules go here.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">misc</set>
+        </setters>
+    </element> 
+    <element name="Staff Of An Adder" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_STAFF_OF_AN_ADDER">
+		<description>
+			<p>You can use an action to speak this staff’s command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.</p>
+			<p class="indent">On your turn, you can mentally command the snake if it is within 60 feet of you and you aren’t incapacitated. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.</p>
+			<p class="indent">If the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them.</p>
+		</description>
+		<setters>
+			<set name="keywords">cleric, druid, warlock</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a cleric, druid, or warlock">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+    </element>
+</elements>	
