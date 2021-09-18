@@ -8,8 +8,6 @@
     <element name="Cone Of Silence" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_CONE_OF_SILENCE">
         <description>
             <p>When you push the button on this item once a day, it creates a sphere of silence.</p>
-            <p class="indent">Rules go here.</p>
-            <p class="indent">Moar rules go here.</p>
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
