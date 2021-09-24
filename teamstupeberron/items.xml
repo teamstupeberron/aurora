@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -37,7 +37,7 @@
 		</setters>
     </element>
 	<element name="Sonic Kylie" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_SONIC_KYLIE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
 		<description>
 			<p>This magical boomerang hits harder on the way back. When you attack with it, roll to hit. If you succeed, The Sonic Kylie does 1d4 bludgeoning damage and automatically returns to your hand. However, if you miss your target, the Sonic Kylie spins off. At the start of your next turn, it returns and you may make a new attack roll with it against the same target. If the new attack roll hits, it instead does 1d4 bludgeoning damage plus 3d6 thunder damage. (effect continues if you miss again). Once the strong hit connects, you may then use your reaction to catch the boomerang. If you do not, it lands 30 feet away in a direction of DM’s choice.</p>
 		</description>
@@ -51,6 +51,18 @@
 			<set name="range">60/120</set>
 			<set name="damage" type="bludgeoning">1d4</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
+		</setters>
+	</element>
+	<element name="Estus" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_ESTUS">
+		<description>
+			<p>This bottle has two swigs of healing water, each of which heals 1d12 HP. It refills on a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
 </elements>	
