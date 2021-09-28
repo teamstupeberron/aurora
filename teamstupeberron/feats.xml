@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
-	<element name="Chanegeling Metamorphosis" type="Feat" source="Team StupEberron" id="TSE_CHANGELING_METAMORPHOSIS">
+	<element name="Chanegeling Metamorphosis" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_CHANGELING_METAMORPHOSIS">
 		<requirements>ID_WOTC_ERLW_RACE_CHANGELING</requirements>
 		<prerequisite>Changeling</prerequisite>
 		<description>
@@ -28,7 +28,7 @@
 			<stat name="constitution" value="1" />
 		</rules>
 	</element>
-	<element name="Hero's Fortune" type="Feat" source="Team StupEberron" id="TSE_HEROS_FORTUNE">
+	<element name="Hero's Fortune" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_HEROS_FORTUNE">
 		<description>
 			<p>The maximum number of hero points you can have at any one time is increased to 5.</p>
 			<p>Normal: You can have no more than 3 hero points at one time.</p>
@@ -36,6 +36,22 @@
 		<sheet>
 			<description>
 			The maximum number of hero points you can have at any one time is increased to 5.
+			</description>
+		</sheet>
+	</element>
+	<element name="Chanegelingdar" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_CHANGELINGDAR">
+		<requirements>ID_WOTC_ERLW_RACE_CHANGELING</requirements>
+		<prerequisite>Changeling</prerequisite>
+		<description>
+			<p><em>Prerequisite: Changeling</em></p>
+			<p><em>Prerequisite: Demonic Deal or DM Permission</em></p>
+			<p>You can recognize Changelings on sight regardless of their current form. </p>
+			<p>Downside: Changelings can recognize you on sight regardless of your current form.</p>
+		</description>
+		<sheet>
+			<description>
+			You can recognize Changelings on sight regardless of their current form.
+			Downside: Changelings can recognize you on sight regardless of your current form.
 			</description>
 		</sheet>
 	</element>

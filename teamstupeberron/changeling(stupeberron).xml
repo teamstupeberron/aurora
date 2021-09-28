@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -87,8 +87,21 @@
 			<grant type="Dragonmark" id="ID_WOTC_ERLW_DRAGONMARK_MARK_OF_SHADOW" />
 			<stat name="charisma" value="1" />
 			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_MARK_OF_SHADOW_CUNNING_INTUITION" />
-			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_MARK_OF_SHADOW_SHAPE_SHADOWS" />
+			<grant type="Racial Trait" id="ID_TSE_RACIAL_TRAIT_MARK_OF_SHADOW_SHAPE_SHADOWS" />
 			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_MARK_OF_SHADOW_SPELLS_OF_THE_MARK" />
+		</rules>
+	</element>
+	<element name="Shape Shadows" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_MARK_OF_SHADOW_SHAPE_SHADOWS">
+		<description>
+			<p>You know the minor illusion cantrip. Starting at 3rd level, you can cast the invisibility spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the minor illusion cantrip using Charisma as your spellcasting ability.</description>
+			<description level="3" usage="1/Long Rest">You know the minor illusion cantrip. You can cast the invisibility spell once with this trait using Charisma as your spellcasting ability.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" />
 		</rules>
 	</element>
 </elements>	
