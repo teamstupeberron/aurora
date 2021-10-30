@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.9">
+		<update version="0.1.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -49,6 +49,7 @@
 			<set name="rarity">Rare</set>
 			<set name="slot">onehand</set>
 			<set name="range">60/120</set>
+			<set name="attunement">true</set>
 			<set name="damage" type="bludgeoning">1d4</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
 		</setters>
