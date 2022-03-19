@@ -81,11 +81,9 @@
 	<element name="Black and Yellow" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BLACKNYELLOW">
 		<description>
 			<p>This black and yellow pendant is made from dragonshard and can cast one of the following spells once a day:</p>
-			<ul>
-				<li><em>Dust of Dissapearance</em> 10 ft invisibility for 2d4 minutes</li>
-				<li><em>Flash of Truth</em> (Wis Save DC 14), 1 question</li>
-				<li><em>Hold Portal</em></li>
-			</ul>
+			<p class="indent"><strong><em>Dust of Dissapearance:</em></strong>  10 ft invisibility for 2d4 minutes</p>
+			<p class="indent"><strong><em>Flash of Truth:</em></strong>  (Wis Save DC 14), 1 question</p>
+			<p class="indent"><strong><em>Hold Portal</em></strong></p>
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
