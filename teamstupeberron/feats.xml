@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.9">
+		<update version="0.1.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -46,7 +46,7 @@
 			<p><em>Prerequisite: Changeling</em></p>
 			<p><em>Prerequisite: Demonic Deal or DM Permission</em></p>
 			<p>You can recognize Changelings on sight regardless of their current form. </p>
-			<p>Downside: Changelings can recognize you on sight regardless of your current form.</p>
+			<p><em>Downside:</em> Changelings can recognize you on sight regardless of your current form.</p>
 		</description>
 		<sheet>
 			<description>
@@ -55,4 +55,109 @@
 			</description>
 		</sheet>
 	</element>
+	<element name="WALLForged" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_WALLFORGED">
+		<requirements>ID_WOTC_ERLW_RACE_WARFORGED</requirements>
+		<prerequisite>Warforged</prerequisite>
+		<description>
+			<p><em>Prerequisite: Warforged</em></p>
+			<p><em>Prerequisite: Magical Scale Shenanigans or DM Permission</em></p>
+			<p>You're an absolute unit. With the magical addition of bulk, you have become burl personified. You get +1 to AC, and can count as full cover for your allies.</p>
+		</description>
+		<sheet>
+			<description>
+			You get +1 to AC, and can count as full cover for your allies.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Read A Book" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_READABOOK">
+		<description>
+			<p><em>Prerequisite: DM Permission</em></p>
+			<p><em>Prerequisite: A mind reading tool for your Sister-book</em></p>
+			<p>You've spent a lot of time analyzing the correlation between your sister's writings and thoughts, which has provided insight into peoples true thoughts and motives. You are proficient in the Insight skill</p>
+		</description>
+		<sheet>
+			<description>
+			You gain proficiency in the Insight skill.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+		</rules>
+	</element>
+	<element name="Roger's Understudy" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_ROGERSUNDERSTUDY">
+		<description>
+			<p><em>Prerequisite: DM Permission</em></p>
+			<p><em>Prerequisite: Friendship with a shady Bard-Borg</em></p>
+			<p>You spend some time shadowing Roger, gaining proficiency in either Persuasion, Performance, or Deception</p>
+		</description>
+		<sheet>
+			<description>
+			You gain proficiency in the Insight skill.
+			</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Implement of Peace" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />	
+		</rules>
+	</element>
+	<element name="Bend It Like Bharush" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_BENDITLIKEBHARUSH">
+		<description>
+			<p><em>Prerequisite: DM Permission</em></p>
+			<p><em>Prerequisite: A Dragonborn friend willing to be your personal trainer</em></p>
+			<p>In preparation for a second chance at a local Hrazhack pickup game, you get a super sweet training montage with Bharush. You win the game in stunning capacity and gain proficiency in the Athletics skill.</p>
+		</description>
+		<sheet>
+			<description>
+			You gain proficiency in the Athletics skill.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+	<element name="Sleight of Hammed" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_SLEIGHTOFHAMMED">
+		<description>
+			<p><em>Prerequisite: DM Permission</em></p>
+			<p><em>Prerequisite: Access to a great deal of Pepperoni</em></p>
+			<p>You've spent a disturbing amount of time playing the literal version of "Hide the Pepperoni" on your friends. They gain a sizeable amount of pepperoni, and you gain proficency in the Sleight of Hand skill.</p>
+		</description>
+		<sheet>
+			<description>
+			You gain proficiency in the Slight of Hand skill.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+		</rules>
+	</element>
 </elements>	
+<!--
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Skilled)" supports="Skill||Tool" number="3" />
+		</rules>  
+	<element name="Skill Proficiency" type="Racial Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACIAL_TRAIT_SKILL_PROFICIENCY">
+		<compendium display="false" />
+		<supports>Custom Lineage Variable Trait</supports>
+		<description>
+			<p>You gain proficiency in one skill of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Custom Lineage" supports="Skill" />
+		</rules>
+	</element>
+	<element name="Implement of Peace" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PEACE_DOMAIN_IMPLEMENT_OF_PEACE">
+		<description>
+			<p><em>1st-level Peace Domain feature</em></p>
+			<p>You gain proficiency in the Insight, Performance, or Persuasion skill (your choice).</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the Insight, Performance, or Persuasion skill.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Implement of Peace" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />			
+		</rules>
+	</element>
+	-->

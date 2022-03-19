@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.2">
+		<update version="0.1.4">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -66,4 +66,34 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
-</elements>	
+	<element name="Ball Of Snow Rice" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_SNOWRICEBALL">
+		<description>
+			<p>This small ball of magical rice restores 4D4+4 HP upon consumption, and another 4D4+4 HP at the start of the next round.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Black and Yellow" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BLACKNYELLOW">
+		<description>
+			<p>This black and yellow pendant is made from dragonshard and can cast one of the following spells once a day:</p>
+			<ul>
+				<li><em>Dust of Dissapearance</em> 10 ft invisibility for 2d4 minutes</li>
+				<li><em>Flash of Truth</em> (Wis Save DC 14), 1 question</li>
+				<li><em>Hold Portal</em></li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">neck</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+</elements>
