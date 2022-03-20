@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -130,6 +130,53 @@
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+		</rules>
+	</element>
+	<element name="Sleight of Hammed" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_SLEIGHTOFHAMMED">
+		<description>
+			<p><em>Prerequisite: DM Permission</em></p>
+			<p><em>Prerequisite: Access to a great deal of Pepperoni</em></p>
+			<p>You've spent a disturbing amount of time playing the literal version of "Hide the Pepperoni" on your friends. They gain a sizeable amount of pepperoni, and you gain proficency in the Sleight of Hand skill.</p>
+		</description>
+		<sheet>
+			<description>
+			You gain proficiency in the Slight of Hand skill.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+		</rules>
+	</element>
+	<element name="Right Armed and Dangerous" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_RIGHTARMEDANDDANGEROUS">
+		<requirements>ID_WOTC_ERLW_RACE_WARFORGED</requirements>
+		<prerequisite>Warforged</prerequisite>
+		<description>
+			<p>You've had a special crossbow installed in your right arm, which provides the following benefits:</p>
+			<ul>
+				<li>You ignore the loading quality of your arm crossbow.</li>
+				<li>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls with your arm crossbow.</li>
+				<li>When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with your arm crossbow.</li>
+			</ul>			
+		</description>
+		<sheet>
+			<description>You ignore the loading quality of your arm crossbow.
+			Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls with your arm crossbow.
+			When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with your arm crossbow.</description>
+		</sheet>
+	</element>
+	<element name="Bitey the Hand That Feeds" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_BITEYTHEHANDTHATFEEDS">
+		<description>
+			<p><em>Prerequisite: DM Permission</em></p>
+			<p><em>Prerequisite: A significant amount of time learning how to care for a small carnivorous murder monster</em></p>
+			<p>You have spent so much time with your new pet playing "Will it Carnivore?" by catching and feeding appropriately sized beasts to your slightly larger beast, you've gained a great deal of knowledge about the natural world.  You gain proficiency in the Nature skill.</p>
+		</description>
+		<sheet>
+			<description>
+			You gain proficiency in the Nature skill.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
 		</rules>
 	</element>
 </elements>	
