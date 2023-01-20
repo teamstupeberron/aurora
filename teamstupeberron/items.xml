@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.4">
+		<update version="0.1.6">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -94,4 +94,85 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
+	<element name="Great Owl's Shroud" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_GREATOWL_SHROUD">
+		<description>
+			<p>This draping shoulder cloak flutters softly while worn, even if there isn’t a breeze. The cloak has 10 charges and regains all expended charges daily at dawn. When you take the Attack action while wearing this garment, you can replace one or more of your attacks with a special ranged spell attack using the cloak, expending 1 of its charges for each attack you replace. When you do, you flourish the cloak and release a barrage of magical feathers that fly toward the target. You have a +5 bonus to attack rolls made with the cloak, which have a normal range of 30 feet and a long range of 120 feet. On a hit, the target takes 2d4 + 3 force damage. After the attack, the feathers vanish.</p>
+			<p>In addition, you can use a reaction when you fall to cast the “feather fall” spell from the cloak, targeting only yourself. Once this property of the cloak has been used, it can’t be used again until the next dawn.</p>
+			<p>As a Changeling, the cloak changes form when you do, but always into some form of cloak.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+    <element name="Glamoui" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_GLAMOUI">
+        <description>
+            <p>A small pebble that turns into a minnow in the water and back to a pebble when removed. Belongs to Lyth. Prophetic!</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">misc</set>
+        </setters>
+    </element> 
+    <element name="Uggling" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_UGGLING">
+        <description>
+            <p>A hideous stitched toy bear can activate with the word "Uggling" to say a phrase you give it by being attuned with it. Belongs to Kara. Prophetic!</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">misc</set>
+        </setters>
+    </element> 
+    <element name="Etherling" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_ETHERLING">
+        <description>
+            <p>A whisp of what appears to be cotton but is actually a cloud. By attuning with the command word "Etherling", it hovers around your head and can be moved with concentration. Belongs to Bharush. Prophetic!</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">misc</set>
+        </setters>
+    </element> 
+    <element name="Oilifera" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_OILIFERA">
+        <description>
+            <p>A greyish, dark inky sponge. It magically absorbs wax, oil, and more. Belongs to Ashtari. Prophetic!</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">misc</set>
+        </setters>
+    </element> 
+    <element name="Crown of the Woad King" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_WOADCROWN">
+        <description>
+            <p>A crown to celebrate your glory as a Woad Warrior. Belongs to Yeats. Prophetic!</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">misc</set>
+        </setters>
+    </element>
 </elements>
