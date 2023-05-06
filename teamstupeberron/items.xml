@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.6">
+		<update version="0.1.8">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -189,4 +189,146 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
 		</setters>
 	</element>
+	<element name="Cracked Driftglobe" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_CRACKED_DRIFTGLOBE">
+		<description>
+			<p>This small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can speak its command word and cause it to emanate the <em>light</em> spell.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Liar's Lyre" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_LIARS_LYRE">
+		<description>
+			<p>This magical instrument's strings reverberate at the sound of a lie you tell, allowing you to weave tall tales and convince others of your lies more easily. You have advantage on any Charisma (Deception) check you make when you spend at least 1 minute attempting to convince a creature of a lie. In addition, when you cast the vicious mockery cantrip and are holding the lyre, the spell save DC is increased by 1. You are proficient with this lyre while you are attuned to the instrument.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Docent (Herzog)" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_DOCENT_HERZOG">
+		<description>
+			<p>(requires attunement by a warforged)A docent is a small metal sphere, about 2 inches across, studded with dragonshards. To attune to a docent, you must embed the item somewhere on your body, such as your chest or your eye socket.</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> A docent is a sentient item of any alignment with an Intelligence of 16, a Wisdom of 14, and a Charisma of 14. It perceives the world through your senses. It communicates telepathically with you and can speak, read, and understand any language it knows </p>
+			<p class="indent"><strong><em>Life Support.</em></strong> Whenever you end your turn with 0 hit points, the docent can make a Wisdom (Medicine) check with a +6 bonus. If this check succeeds, the docent stabilizes you.</p>
+			<p class="indent"><strong><em>Docent First Aid (Spell).</em></strong> Evocation Cantrip. Verbal, Somatic components. Casting Time: Full Action. The warforged you are inset into can spend a Hit Die to regain 1d4+3 hp. This may only be used while the warforged is nonfunctioning (aka at zero HP).</p>
+			<p class="indent"><strong><em>Languages.</em></strong> The docent knows Common, Draconic, Elven, Giant, Primordial, and Sylvan. It can translate for you and speak aloud to provide translation to those you wish to speak to.</p>
+			<p class="indent"><strong><em>Skills.</em></strong> The docent has a +7 to History Checks.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> The docent can cast Detect Magic at will.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Couatl Herald's Reach" type="Magic Item" source="Dungeon Master’s Guide" id="ID_TSE_WEAPON_COUATL_HERALDS_REACH">
+		<description>
+			<p>Weapon (any bow), rare (requires attunement by a creature of good alignment)</p>
+			<p class="indent">This wooden bow is carved to resemble a mighty couatl. You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bow has 4 charges and regains 1d3 + 1 expended charges each day at dawn. When you make a ranged attack against a Large or smaller creature with the bow, you can choose a limb to target and expend 1 charge as part of the attack. If the attack hits, the weapon's damage becomes radiant, and the creature is forced to make a DC 15 Dexterity saving throw. On a failed save, that creature's targeted limb is pinned by radiant tethers of magic: holding it to its body or adjacent surface (if any) for up to 1 minute.</p>
+			<p class="indent">Depending on the pinned limb, the creature may fall over prone, be unable to move, or make weapon attacks with disadvantage while the limb remains pinned in this way. The creature whose limb is pinned by the arrow can use an action to make a DC 15 Strength or Dexterity check (target’s choice). On a success, its limb is no longer pinned by the arrow.</p>
+			<p class="indent">Flight of the Couatls. While you're attuned to 3 items with this feature, you gain a flying speed of 30 feet. If you already have a flying speed, this speed is in addition to your existing flying speed.</p>
+		</description>
+		<setters>
+			<set name="keywords">bow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any crossbow">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</set>
+			<set name="name-format">Couatl Herald's Reach {{parent}}</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+	<element name="Hamstrings of Jumping" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_HAMSTRINGS_OF_JUMPING">
+		<description>
+			<p>Requires attunement by a Warforged. Allows use of the Jump spell as a bonus action at will.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	
+	
+	<element name="Breaker Breastplate" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BREAKER_BREASTPLATE">
+		<description>
+			<p>If a creature rolls a 1 or 20 while attacking you, they take 4D4 force damage and are knocked prone</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">body</set>
+			<set name="type" addition="breastplate">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">Breastplate</set>
+		</setters>
+	</element>
+	
+	
+	<element name="Vain Virtuoso's Violin" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_VAIN_VIRTUOSO_VIOLIN">
+		<description>
+			<p><em>Requires attunement by a bard)</em></p>
+			<p>This finely-crafted instrument is inlaid with intricate pearl designs. When you give another creature a Bardic Inspiration die using this violin, you gain one yourself, which is a d4.</p>
+			<p><em>Curse.</em> This violin is cursed, and becoming attuned to it extends the curse to you. When a creature that you can see (including yourself) fails an ability check, attack roll, or saving throw after adding the bonus from your Bardic Inspiration to the total of the roll, you take psychic damage equal to the number rolled on the Bardic Inspiration die as you lose faith in your own abilities. This damage ignores resistance and immunity.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+	
+	<element name="Bracelet of Rock Magic" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BRACELET_OF_ROCK_MAGIC">		
+		<description>
+			<p>While you wear this gold bracelet, it grants you immunity to being petrified, and it allows you to cast <em>flesh to stone</em> (save DC 15) as an action. Once the spell has been cast three times, the bracelet can no longer cast it. Thereafter, you can cast stone shape as an action. After you have done this thirteen times, the bracelet loses its magic and turns from gold to lead. Has 12 charges left.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> The bracelet's affinity with earth manifests as an unusual curse. Creatures of flesh that are strongly related to earth and stone, such as stone giants and dwarves, have advantage on the saving throw against <em>flesh to stone</em> cast from the bracelet. If such a creature's save is successful, the bracelet breaks your attunement to it and casts the spell on you. You make your saving throw with disadvantage, and on a failed save you are petrified instantly. (The Hidden Shrine of Tamoachan)</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="slot">arms</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<!-- condition immunity petrification -->
+		</rules>
+	</element>
+	
+	<element name="Grappling Hook (Arrow)" type="Item" source="Team StupEberron" id="ID_TSE_ITEM_GRAPPLING_HOOK_ARROW">
+		<description>
+			<p>This arrow's head is replaced with a grappling hook and has 50 feet of rope trailing behind it. The hook will pierce through nonmagical, non-adamantine materials in order to stay hooked. The end of the rope is connected to your bow and may be undone as a bonus action. If another grappling hook arrow is fired, and lands within 100 feet of another grappling arrow that is attached to your bow, you may have them be connected. The hooks may be taken out with a successful DC 10 strength check, and may be traversed with a DC 15 Acrobatics check at normal speed, once made the check does not need to be made for another minute. For each time this modification is taken another rope is attached to your bow. If this hits a creature, it connects to the square on the other side of the creature.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
 </elements>

@@ -78,7 +78,7 @@
 			<p><em>Prerequisite: A mind reading tool for your Sister-book</em></p>
 			<p>You've spent a lot of time analyzing the correlation between your sister's writings and thoughts, which has provided insight into peoples true thoughts and motives. You are proficient in the Insight skill</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>
 			You gain proficiency in the Insight skill.
 			</description>
@@ -115,21 +115,6 @@
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
-		</rules>
-	</element>
-	<element name="Sleight of Hammed" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_SLEIGHTOFHAMMED">
-		<description>
-			<p><em>Prerequisite: DM Permission</em></p>
-			<p><em>Prerequisite: Access to a great deal of Pepperoni</em></p>
-			<p>You've spent a disturbing amount of time playing the literal version of "Hide the Pepperoni" on your friends. They gain a sizeable amount of pepperoni, and you gain proficency in the Sleight of Hand skill.</p>
-		</description>
-		<sheet>
-			<description>
-			You gain proficiency in the Slight of Hand skill.
-			</description>
-		</sheet>
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
 		</rules>
 	</element>
 	<element name="Sleight of Hammed" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_SLEIGHTOFHAMMED">
@@ -237,6 +222,38 @@
 			<stat name="charisma" value="1" />
 		</rules>
 	</element>
+	<element name="Limiter Override" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_LIMITER_OVERRIDE">
+		<requirements>ID_WOTC_ERLW_RACE_WARFORGED</requirements>
+		<prerequisite>Warforged</prerequisite>
+		<description>
+			<p>As an action, you can buff two stats by 1 for three minutes.  You also gain advantage on checks using those stats. The stats chosen can be the same stat. At the end of that time, you gain one level of exhaustion. You can use this any number of times per day, but a maximum of two times simultaneously. And if used simultaneously, you take an additional level of exhaustion.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can buff two stats by 1 for three minutes.  You also gain advantage on checks using those stats. The stats chosen can be the same stat. At the end of that time, you gain one level of exhaustion. You can use this any number of times per day, but a maximum of two times simultaneously. And if used simultaneously, you take an additional level of exhaustion.</description>
+		</sheet>
+	</element>
+	<element name="Collective Bar-Gaining" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_COLLECTIVE_BAR_GAINING">
+		<requirements>ID_WOTC_ERLW_RACE_WARFORGED</requirements>
+		<prerequisite>Warforged</prerequisite>
+		<description>
+			<p>Requires the WALLForged feat</p>
+			<p>Become less big by crapping out a pile of wood and stone. You are no longer wallforged, but can do grappling hook tricks successfully. After a long rest you can be wallforged again by eating a pile of wood and stone. Also using local wood and stone gives you the natural coloration of whatever part of the world you're in, granting advantage on stealth checks.</p>
+		</description>
+		<sheet>
+			<description>Become less big by crapping out a pile of wood and stone. You are no longer wallforged, but can do grappling hook tricks successfully. After a long rest you can be wallforged again by eating a pile of wood and stone. Also using local wood and stone gives you the natural coloration of whatever part of the world you're in, granting advantage on stealth checks.</description>
+		</sheet>
+	</element>
+	<element name="He'll Live" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_HELL_LIVE">
+		<requirements>ID_WOTC_ERLW_RACE_WARFORGED</requirements>
+		<prerequisite>Warforged</prerequisite>
+		<description>
+			<p>Your arm crossbow can fire non-lethal taser bolts.</p>
+		</description>
+		<sheet>
+			<description>Your arm crossbow can fire non-lethal taser bolts.</description>
+		</sheet>
+	</element>
+	
 </elements>	
 <!--
 		<rules>
