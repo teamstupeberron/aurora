@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.8">
+		<update version="0.2.0">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -331,4 +331,107 @@
 		</setters>
 	</element>
 	
+	
+	<element name="Healies" type="Magic Item" source="Team StupEberron" id="ID_TSE_ITEM_HEALIES">
+		<description>
+			<p>These boots allow you to do the following things, each once per day:</p>
+			<p> 1) As a Reaction, if you are touching the ground and unrestrained, you can hop back five feet [not provoking attacks of opportunity]. If your attacker doesn’t have that range, their attack misses. This also works if you’re right on the edge of a fireball or in line of a lightning bolt or whatever. If moving five feet takes you out of range, you aren’t effected.</p>
+			<p> 2) Inside the back half of the right sole is a refillable Stomp Potion. As part of a Movement, you can use it to give yourself a second wind [roll one of your hit dice and regain that many hp].</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, reaction</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Sentira Lens, Light" type="Weapon" source="Team StupEberron" id="ID_TSE_WEAPON_SENTIRA_LENS_LIGHT">	
+		<supports>ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+		<description>
+			<p>Sentira Lenses are a hand held ranged weapon that can focus a wielder's psionic potential to fire a harmful bolt of telepathic energy. </p>
+			<p>They count as a "psiactive" weapon. a Psiactive ranged weapon draws its power from your innate psionic potential, whether or not you're trained to use it. When attacking with a psiactive weapon, you use your choice of your Intelligence or Charisma modifier for the attack and damage rolls.</p>
+			<p>You can fire psiactive weapons a number of times equal to twice your proficiency bonus. After that, your psionic potential is temporarily expended and you can't fire another psiactive weapon until you regain your psionic focus by using an action or a bonus action (your choice). Your psionic focus is shared between all psiactive weapons.</p>
+			<p>Psiactive weapons aren't considered magical weapons and can't be sensed with the detect magic spell or similar magic. However, they don't function in an antimagic field.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="psychic">1d6</set>
+		</setters>
+	</element>
+	
+	<element name="Sentira Lens, Hand" type="Weapon" source="Team StupEberron" id="ID_TSE_WEAPON_SENTIRA_LENS_HAND">	
+		<supports>ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<description>
+			<p>Sentira Lenses are a hand held ranged weapon that can focus a wielder's psionic potential to fire a harmful bolt of telepathic energy. </p>
+			<p>They count as a "psiactive" weapon. a Psiactive ranged weapon draws its power from your innate psionic potential, whether or not you're trained to use it. When attacking with a psiactive weapon, you use your choice of your Intelligence or Charisma modifier for the attack and damage rolls.</p>
+			<p>You can fire psiactive weapons a number of times equal to twice your proficiency bonus. After that, your psionic potential is temporarily expended and you can't fire another psiactive weapon until you regain your psionic focus by using an action or a bonus action (your choice). Your psionic focus is shared between all psiactive weapons.</p>
+			<p>Psiactive weapons aren't considered magical weapons and can't be sensed with the detect magic spell or similar magic. However, they don't function in an antimagic field.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="psychic">1d4</set>
+		</setters>
+	</element>
+	
+	<element name="Sentira Lens, Heavy" type="Weapon" source="Team StupEberron" id="ID_TSE_WEAPON_SENTIRA_LENS_HEAVY">	
+		<supports>ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<description>
+			<p>Sentira Lenses are a hand held ranged weapon that can focus a wielder's psionic potential to fire a harmful bolt of telepathic energy. </p>
+			<p>They count as a "psiactive" weapon. a Psiactive ranged weapon draws its power from your innate psionic potential, whether or not you're trained to use it. When attacking with a psiactive weapon, you use your choice of your Intelligence or Charisma modifier for the attack and damage rolls.</p>
+			<p>You can fire psiactive weapons a number of times equal to twice your proficiency bonus. After that, your psionic potential is temporarily expended and you can't fire another psiactive weapon until you regain your psionic focus by using an action or a bonus action (your choice). Your psionic focus is shared between all psiactive weapons.</p>
+			<p>Psiactive weapons aren't considered magical weapons and can't be sensed with the detect magic spell or similar magic. However, they don't function in an antimagic field.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="5">18 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="psychic">1d8</set>
+		</setters>
+	</element>
+	
+	
+	
+	<element name="Crossbow, Heavy" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</set>
+		</setters>
+	</element>
+	<element name="Greatsword" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_WEAPON_GREATSWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
+		</setters>
+	</element>
 </elements>

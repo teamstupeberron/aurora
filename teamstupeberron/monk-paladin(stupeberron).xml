@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Monk-Paladin</name>
-		<description>The Monk-Paladin class from Team Stupeberron</description>
-		<update version="0.1.7">
+		<name>Luminous</name>
+		<description>The Luminous class from Team Stupeberron</description>
+		<update version="0.2.0">
 			<file name="monk-paladin(stupeberron).xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/monk-paladin(stupeberron).xml" />
 		</update>
 	</info>
 
-	<element name="Monk-Paladin" type="Class" source="Team StupEberron" id="ID_TSE_CLASS_PALADIN">
+	<element name="Luminous" type="Class" source="Team StupEberron" id="ID_TSE_CLASS_PALADIN">
 		<description>
 			<p>Clad in plate armor that gleams in the sunlight despite the dust and grime of long travel, a human lays down her sword and shield and places her hands on a mortally wounded man. Divine radiance shines from her hands, the man’s wounds knit closed, and his eyes open wide with amazement.</p>
 			<p class="indent">A dwarf crouches behind an outcrop, his black cloak making him nearly invisible in the night, and watches an orc war band celebrating its recent victory. Silently, he stalks into their midst and whispers an oath, and two orcs are dead before they even realize he is there.</p>
@@ -51,7 +51,7 @@
 				<li><i>(a)</i> a priest’s pack or <i>(b)</i> an explorer’s pack</li>
 				<li>Chain mail and a holy symbol</li>
 			</ul>
-			<h5 class="caption">THE MONK-PALADIN</h5>
+			<h5 class="caption">THE LUMINIOUS</h5>
 			<table class="class-features">
 				<thead>
 					<tr><td class="col-5">Level</td><td class="col-60 left">Features</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
@@ -164,11 +164,11 @@
 			This feature has no effect on undead and constructs.</description>
 		</sheet>
 		<rules>
-			<stat name="lay on hands:hp pool" value="level:monk-paladin" />
-			<stat name="lay on hands:hp pool" value="level:monk-paladin" />
-			<stat name="lay on hands:hp pool" value="level:monk-paladin" />
-			<stat name="lay on hands:hp pool" value="level:monk-paladin" />
-			<stat name="lay on hands:hp pool" value="level:monk-paladin" />
+			<stat name="lay on hands:hp pool" value="level:luminous" />
+			<stat name="lay on hands:hp pool" value="level:luminous" />
+			<stat name="lay on hands:hp pool" value="level:luminous" />
+			<stat name="lay on hands:hp pool" value="level:luminous" />
+			<stat name="lay on hands:hp pool" value="level:luminous" />
 		</rules>
 	</element>
 	<element name="Fighting Style" type="Class Feature" source="Team StupEberron" id="ID_TSE_CLASS_FEATURE_PALADIN_FIGHTING_STYLE">
@@ -225,7 +225,7 @@
 			<stat name="paladin:spellcasting:slots:5" value="1" level="17" />
 			<stat name="paladin:spellcasting:slots:5" value="1" level="19" />
 			<stat name="paladin:spellcasting:prepare" value="wisdom:modifier" />
-			<stat name="paladin:spellcasting:prepare" value="level:monk-paladin:half" />
+			<stat name="paladin:spellcasting:prepare" value="level:luminous:half" />
 		</rules>
 	</element>
 	<element name="Divine Smite" type="Class Feature" source="Team StupEberron" id="ID_TSE_CLASS_FEATURE_PALADIN_DIVINE_SMITE">

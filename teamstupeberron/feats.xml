@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.9">
+		<update version="0.2.0">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -255,31 +255,3 @@
 	</element>
 	
 </elements>	
-<!--
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency (Skilled)" supports="Skill||Tool" number="3" />
-		</rules>  
-	<element name="Skill Proficiency" type="Racial Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACIAL_TRAIT_SKILL_PROFICIENCY">
-		<compendium display="false" />
-		<supports>Custom Lineage Variable Trait</supports>
-		<description>
-			<p>You gain proficiency in one skill of your choice.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency, Custom Lineage" supports="Skill" />
-		</rules>
-	</element>
-	<element name="Implement of Peace" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PEACE_DOMAIN_IMPLEMENT_OF_PEACE">
-		<description>
-			<p><em>1st-level Peace Domain feature</em></p>
-			<p>You gain proficiency in the Insight, Performance, or Persuasion skill (your choice).</p>
-		</description>
-		<sheet display="false">
-			<description>You gain proficiency in the Insight, Performance, or Persuasion skill.</description>
-		</sheet>
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency, Implement of Peace" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />			
-		</rules>
-	</element>
-	-->
