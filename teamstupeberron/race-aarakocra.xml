@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Aarakocra from Team StupEberron</name>
-		<update version="0.2.0">
+		<update version="0.2.1">
 			<file name="race-aarakocra.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/race-aarakocra.xml" />
 		</update>
 	</info>
@@ -18,7 +18,7 @@
 			<p class="indent"><strong><em>Size.</em></strong> Your size is Medium.</p>
 			<p class="indent"><strong><em>Language.</em></strong> You can speak, read, and write Common and one other language.</p>
 			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 25 feet.</p>
-			<p class="indent"><strong><em>Flight.</em></strong> Because of your wings, you have a flying speed of 50 feet. You can’t use this flying speed if you’re wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Flight.</em></strong> Because of your wings, you have a base flying speed of 50 feet. You can’t use this flying speed if you’re wearing medium or heavy armor.</p>
 			<p class="indent"><strong><em>Talons.</em></strong> You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
 			<p class="indent"><strong><em>Wind Caller.</em></strong> Starting at 3rd level, you can cast the <i>gust of wind</i> spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can’t do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.</p>
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for it when you cast <i>gust of wind</i> with this trait (choose when you select this race).</p>
@@ -42,10 +42,10 @@
 	</element>
 	<element name="Flight" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_AARAKOCRA_FLIGHT">
 		<description>
-			<p>Because of your wings, you have a flying speed equal to your walking speed. You can’t use this flying speed if you’re wearing medium or heavy armor.</p>
+			<p>Because of your wings, you have a flying speed of {{speed:fly}}. You can’t use this flying speed if you’re wearing medium or heavy armor.</p>
 		</description>
 		<sheet>
-			<description>Because of your wings, you have a flying speed equal to {{innate speed}}. You can’t use this flying speed if you’re wearing medium or heavy armor.</description>
+			<description>Because of your wings, you have a flying speed of {{speed:fly}}. You can’t use this flying speed if you’re wearing medium or heavy armor.</description>
 		</sheet>
 		<rules>
 			<stat name="innate speed:fly" value="50" bonus="base" equipped="![armor:medium],![armor:heavy]" />

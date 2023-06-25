@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.0">
+		<update version="0.2.1">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -403,8 +403,49 @@
 		</setters>
 	</element>
 	
+	<element name="Ashen Blade" type="Magic Item" source="Team StupEberron" id="ID_TSE_WEAPON_ASHEN_BLADE">
+		<description>
+			<p>A blade used by knights in service of a kingdom long forgotten to time and whose only remains are ashes and ruins, this weapon takes the appearance of a sharp blade decorated with carvings representing the heads of wolves, when the user lands a precise blow to an enemy the blade leaves a vicious burnt wound on the target.</p>
+			<p class="indent"><strong><em>Magic Weapon.</em></strong> This weapon gains a +2 bonus to any attack and damage roll made using it.</p>
+			<p class="indent"><strong><em>Caurerized Wounds.</em></strong> If you make an attack roll with this weapon and you roll a 17 on higher on the d20 you may add 1d6 fire damage to the attack's damage and the target must succeed in a Constitution saving throw (DC = 8 + your Strength/Dexterity Modifier + your proficiency bonus + this weapon's magic bonus) or it will be inflicted by the searing heat of the blade making them unable to recover hit points until the end of their next turn.</p>
+			<p class="indent"><strong><em>Ashen Legacy.</em></strong> If you kill a creature using this weapon or use it to strike the corpse of a dead creature, the corpse becomes unable to be used for the usage of any spell or magical effect as the blade's magic leaves a charred and smoking body behind.</p>
+		</description>
+		<setters>
+			<set name="keywords">axe, sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any axe or sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
+		</setters>
+	</element>
 	
 	
+	<element name="Peniondant" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_PENIONDANT">
+		<description>
+			<p>An enchanted locket made of solid opal attached to an indestructible chain necklace.</p>
+			<p class="indent"><strong><em>Favored by the Winds.</em></strong> While this pendant is worn by an aarakocra, your flying speed increases by 20 feet.</p>
+			<p class="indent"><strong><em>Syranita's Blessing.</em></strong> If the wearer is an aarakocra, you can place a feather that did not come from yourself inside of the locket with Syranita's feather. If the feather is left in the locket for 1 continuous hour, the feather becomes magical. A creature with less than half of their hit points can use an action to touch the magical feather, regaining hit points until they have half of their hit points remaining, rounded up. The feather then disappears. Once this feature is used, it cannot be used again until 7 days have passed.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">neck</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="speed:fly" value="20" requirements="ID_TSE_RACE_AARAKOCRA"/>
+		</rules>
+	</element>
+	
+	
+	
+	
+	<!--
 	<element name="Crossbow, Heavy" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
 		<description>
@@ -434,4 +475,5 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
 		</setters>
 	</element>
+	-->
 </elements>
