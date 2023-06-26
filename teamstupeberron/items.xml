@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.1">
+		<update version="0.2.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -421,12 +421,9 @@
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
 		</setters>
 	</element>
-	
-	
 	<element name="Peniondant" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_PENIONDANT">
 		<description>
 			<p>An enchanted locket made of solid opal attached to an indestructible chain necklace.</p>
-			<p class="indent"><strong><em>Favored by the Winds.</em></strong> While this pendant is worn by an aarakocra, your flying speed increases by 20 feet.</p>
 			<p class="indent"><strong><em>Syranita's Blessing.</em></strong> If the wearer is an aarakocra, you can place a feather that did not come from yourself inside of the locket with Syranita's feather. If the feather is left in the locket for 1 continuous hour, the feather becomes magical. A creature with less than half of their hit points can use an action to touch the magical feather, regaining hit points until they have half of their hit points remaining, rounded up. The feather then disappears. Once this feature is used, it cannot be used again until 7 days have passed.</p>
 		</description>
 		<setters>
@@ -437,43 +434,5 @@
 			<set name="slot">neck</set>
 			<set name="rarity">Rare</set>
 		</setters>
-		<rules>
-			<stat name="speed:fly" value="20" requirements="ID_TSE_RACE_AARAKOCRA"/>
-		</rules>
 	</element>
-	
-	
-	
-	
-	<!--
-	<element name="Crossbow, Heavy" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
-		<description>
-			<p></p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">150</set>
-			<set name="weight" lb="18">18 lb.</set>
-			<set name="slot">twohand</set>
-			<set name="range">100/400</set>
-			<set name="damage" type="piercing">1d10</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</set>
-		</setters>
-	</element>
-	<element name="Greatsword" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_WEAPON_GREATSWORD">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
-		<description>
-			<p></p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">50</set>
-			<set name="weight" lb="6">6 lb.</set>
-			<set name="slot">twohand</set>
-			<set name="damage" type="slashing">2d6</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
-		</setters>
-	</element>
-	-->
 </elements>
