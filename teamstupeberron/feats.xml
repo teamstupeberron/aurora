@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.0">
+		<update version="0.2.3">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -252,6 +252,17 @@
 		<sheet>
 			<description>Your arm crossbow can fire non-lethal taser bolts.</description>
 		</sheet>
+	</element>
+	
+	
+	<element name="You Want Something Done" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_YOU_WANT_SOMETHING_DONE">
+		<description>
+			<p>You gain proficiency in a skill you should clearly already be proficient in.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="You Want Something Done" supports="Skill" number="1" />
+		</rules>
 	</element>
 	
 </elements>	
