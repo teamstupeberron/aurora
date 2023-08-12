@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.3">
+		<update version="0.2.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -253,8 +253,6 @@
 			<description>Your arm crossbow can fire non-lethal taser bolts.</description>
 		</sheet>
 	</element>
-	
-	
 	<element name="You Want Something Done" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_YOU_WANT_SOMETHING_DONE">
 		<description>
 			<p>You gain proficiency in a skill you should clearly already be proficient in.</p>
@@ -262,6 +260,23 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Proficiency" name="You Want Something Done" supports="Skill" number="1" />
+		</rules>
+	</element>
+	<element name="Of The Forest" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_OF_THE_FOREST">
+		<description>
+			<p>You are now slightly more Forest and slightly less whatever you were before.</p>
+			<ul>
+				<li><em>Plant Camouflage.</em>You have advantage on Dexterity (Stealth) checks you make in any terrain with ample obscuring plant life.</li>
+				<li>You are vulnerable to fire.</li>
+				<li>But resistant to piercing.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Plant Camouflage - You have advantage on Dexterity (Stealth) checks you make in any terrain with ample obscuring plant life. Also, you are vulnerable to fire, but resistant to piercing.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
 		</rules>
 	</element>
 	
