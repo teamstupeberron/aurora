@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.4">
+		<update version="1.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -279,5 +279,27 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
 		</rules>
 	</element>
-	
+	<element name="Planar" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_PLANAR">
+		<description>
+			<p><em>Prerequisite: Aasimar, Genasi, Kalashtar, or another lineage with at least 25% parentage in one or multiple of these races.</em></p>
+			<p>You are descended from a plane outside the Material Plane. You have realized this to its fullest extent and have gained new powers those limited to the Material could only dream of.</p>
+			<ul>
+				<li><em>Ethereal Zipper.</em>You learn to use your affinity for other planes to instantaneously move parts of your body into the plane you came from to avoid attacks, as if unzipping a zipper. You may use your reaction to increase your AC against that attack by an amount equal to your proficiency bonus. Once you unzip part of your body using this feature, your speed is zero and you can't use this reaction again until you use a bonus action to zip the void you just created back up.</li>
+				<li><em>Planar Magic.</em>You have learned to pull magical energies from your home realm. Choose a race between Aasimar, Genasi, or Kalashtar for which you have at least 25% parentage. You learn two cantrips and one first-level spell from your race's spell list in the Planar Magic Table, and can cast the 1st-level spell you select once per short or long rest at a level equal to your proficiency bonus minus one without expending a spell slot or points. You can switch spells you know this way for another spell on the table when you finish a Long Rest. Your spellcasting ability for these spells is your choice between Intelligence, Wisdom, or Charisma (choose when you gain this feature). You may also cast these spells using any spell slots or points you have. All the spells on the Planar Magic Table for your race are also added to your class's spell lists for you.</li>
+				<li><em>Mind Protection.</em>You must be a Kalashtar. Your quori spirit teaches you the different ways to assault—and protect—the minds of others. When you use your Mind Link trait to grant a creature the ability to speak telepathically with you, it has resistance to psychic damage for the duration.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+			-Ethereal Zipper- You may use your reaction to increase your AC against that attack by an amount equal to your proficiency bonus. Once you unzip part of your body using this feature, your speed is zero and you can't use this reaction again until you use a bonus action to zip the void you just created back up.
+			-Planar Magic-  You can cast Minor Illusion, Mind Sliver, and Sanctuary.
+			-Mind Protection- When you use your Mind Link trait to grant a creature the ability to speak telepathically with you, it has resistance to psychic damage for the duration.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_MIND_SLIVER" />
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" />
+		</rules>
+	</element>
 </elements>	

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -434,6 +434,56 @@
 			<set name="type">Wondrous Item</set>
 			<set name="slot">neck</set>
 			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Ring of Tressym" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_RING_OF_TRESSYM">
+		<description>
+			<p>This ring allows the user to polymorph into a Tressym once per day for up to 2 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Living Jar (Small)" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_LIVING_JAR_SMALL">
+		<description>
+			<p><em>Fillable.</em>Living jars actively seek out people and ask to have things stored inside them, potions, rations, acid, water, dirt. They'll take anything no matter how destructive or corrosive, they'll store it just fine.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Twilight Blade" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_TWILIGHT_BLADE">		
+		<description>
+			<p>This sword represents the epitome of balance. The weapon has two blades, one forged of golden radiance and the other of obsidian shadow. When drawn, the blades gain a soft aura of light or darkness. If you are proficient with shortswords, longswords, or greatswords, you are proficient with the Twilight Blade.</p>
+			<p class="indent">When making an attack with this weapon, you make two attack rolls, one for each blade. On a hit, a blade does 1d4 slashing damage.</p>
+			<p class="indent"><em>Dawn.</em>When the weapon is held in bright light, the golden blade projects a blade of radiant energy ahead of itself, causing the first attack roll of each attack to be made with advantage and deal radiant damage instead of slashing damage.</p>
+			
+			<p class="indent"><em>Dusk.</em>When the weapon is held in darkness, a shadowy afterimage of the obsidian blade trails behind it, causing the second attack roll of each attack to be made with advantage and deal necrotic damage instead of slashing damage.</p>
+			<p class="indent"><em>Antithesis.</em>While the Dawn feature is active, the second attack roll of each attack is made with disadvantage. While the Dusk feature is active, the first attack roll of each attack is made with disadvantage.</p>
+			<p class="indent"><em>Twilight.</em>As a bonus action while holding the weapon, you can utter a Command Word (Twilight) that echoes in Abyssal, Celestial, and Infernal. Any creature that hears the Commmand Word and can understand those languages understands the meaning of the word. For the next minute, you gain the benefit of the Dawn and Dusk features, and the Antithesis feature is suppressed. Once you use this feature, you cannot use it again until the next dawn.</p>
+			<p class="indent"><em>Light and Shadow.</em>This sword has 3 charges, which you can use to cast spells, and gains 1d2+1 charges with each day at dawn.</p>
+			<p class="indent">While holding the sword, you can spend one or more charges and use an action to speak a Command Word (Daybreak or Nightfall) to cast one of the following spells from the sword without any components except the Command Word spoken.</p>
+			<p class="indent"><em>Daybreak.</em>Daylight. When you cast the Daylight spell using this feature at 5th level or higher, the spell rquires concentration, but the light is sunlight.</p>
+			<p class="indent"><em>Nightfall.</em>Darkness. While you are holding the sword, you treat the magical darkness created by casting the Darkness spell using this feature as nonmagical darkness.</p>
+			<p class="indent">For each charge after the first spent while casting, the level of the spell increases by 1. When you cast a spell using this feature, the point chosen can only be on the weapon.</p>
+			<p class="indent">When spoken, these Command Words echo in Abyssal, Celestial, and Infernal. Any creature that hears these Command Words and can understand those languages understands the meaning of the words.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Longsword</set>
+			<set name="attunement">true</set>
 		</setters>
 	</element>
 </elements>
