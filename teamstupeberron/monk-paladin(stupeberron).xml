@@ -3,7 +3,7 @@
 	<info>
 		<name>Luminous</name>
 		<description>The Luminous class from Team Stupeberron</description>
-		<update version="0.2.0">
+		<update version="1.0.1">
 			<file name="monk-paladin(stupeberron).xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/monk-paladin(stupeberron).xml" />
 		</update>
 	</info>
@@ -715,4 +715,153 @@
 			You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.</description>
 		</sheet>
 	</element>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<element name="Oath of Heroism" type="Archetype" source="Team StupEberron" id="ID_TSE_ARCHETYPE_PALADIN_OATH_OF_HEROISM">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of Heroism is an affirmation of a destined path, one laid out for you by divine hands. For whatever reason, a god or a group of gods has included you in their machinations. You are not a reluctant hero, but one who fully embraces the idea that great deeds are yours to achieve. You train diligently, sculpting your body and refining your skills so you're ready when destiny calls.</p>
+			<h5 class="caption">Tenets of Heroism</h5>
+			<p>The tenets of the Oath of Heroism reflect a paladin's commitment to fulfilling their calling as a hero worthy of legend.</p>
+			<p class="indent"><strong><em>Actions over Words.</em></strong> Strive to be known by deeds, not words.</p>
+			<p class="indent"><strong><em>Challenges are but Tests.</em></strong> Every hardship serves to challenge your abilities and harden your resolve.</p>
+			<p class="indent"><strong><em>Embrace Destiny.</em></strong> You didn't choose this path, but it's yours to walk. And it will carry you into legend.</p>
+			<p class="indent"><strong><em>Hone the Body.</em></strong> Like raw stone, your body must be worked so its potential can be realized.</p>
+			<div element="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_OATH_SPELLS" />
+			<div element="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_CHANNEL_DIVINITY" />
+			<div element="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_MIGHTY_DEED" />
+			<div element="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_GLORIOUS_DEFENSE" />
+			<div element="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_LIVING_MYTH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_MIGHTY_DEED" level="7" />
+			<grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_GLORIOUS_DEFENSE" level="15" />
+			<grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_LIVING_MYTH" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_OATH_SPELLS">
+		<description>
+			<p><em>3rd-level Oath of Heroism feature</em></p>
+			<p>You gain oath spells at the paladin levels listed in the Oath of Heroism Spells table. See the Sacred Oath class feature for how oath spells work.</p>
+			<h5 class="caption">Oath of Heroism Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>expeditious retreat, guiding bolt</td></tr>
+				<tr><td>5th</td><td>enhance ability, enthrall</td></tr>
+				<tr><td>9th</td><td>haste, protection from energy</td></tr>
+				<tr><td>13th</td><td>compulsion, freedom of movement</td></tr>
+				<tr><td>17th</td><td>commune, conjure volley</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTHRALL" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_VOLLEY" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_CHANNEL_DIVINITY">
+		<description>
+			<p><em>3rd-level Oath of Heroism feature</em></p>
+			<p>You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><strong><em>Legendary Strike.</em></strong> You can use your Channel Divinity as a bonus action to guide your attacks: for 1 minute, your weapon attacks score a critical hit on a roll of 19 or 20 on the d20.</p>
+			<p class="indent"><strong><em>Peerless Athlete.</em></strong> You can use your Channel Divinity to augment your athleticism with divine favor. As a bonus action, you gain advantage on all Strength (Athletics) and Dexterity (Acrobatics) checks for the next 10 minutes.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_CD_PEERLESS_ATHLETE" />
+			<grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_CD_LEGENDARY_STRIKE" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Inspiring Smite" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_CD_LEGENDARY_STRIKE">
+		<compendium display="false" />
+		<description>
+			<p>You can use your Channel Divinity as a bonus action to guide your attacks: for 1 minute, your weapon attacks score a critical hit on a roll of 19 or 20 on the d20.</p>
+		</description>
+		<sheet alt="Inspiring Smite" action="Bonus Action" usage="Channel Divinity">
+			<description>You can use your Channel Divinity as a bonus action to guide your attacks: for 1 minute, your weapon attacks score a critical hit on a roll of 19 or 20 on the d20.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Peerless Athlete" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_CD_PEERLESS_ATHLETE">
+		<compendium display="false" />
+		<description>
+			<p>You can use your Channel Divinity to augment your athleticism with divine favor. As a bonus action, you gain advantage on all Strength (Athletics) and Dexterity (Acrobatics) checks for the next 10 minutes.</p>
+		</description>
+		<sheet alt="Peerless Athlete" action="Bonus Action" usage="Channel Divinity">
+			<description>You can use your Channel Divinity to augment your athleticism with divine favor. As a bonus action, you gain advantage on all Strength (Athletics) and Dexterity (Acrobatics) checks for the next 10 minutes.</description>
+		</sheet>
+	</element>
+	<element name="Mighty Deed" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_MIGHTY_DEED">
+		<description>
+			<p><em>7th-level Oath of Heroism feature</em></p>
+			<p>Your actions on the battlefield can supernaturally bolster your allies and demoralize your enemies. Whenever you score a critical hit or reduce a creature to 0 hit points, you can choose one or more creatures that you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). All the chosen creatures are affected by one of the following effects of your choice.</p>
+			<p class="indent">The creature gains temporary hit points equal to 1d6 + your Charisma modifier (minimum of 1 temporary hit point).</p>
+			<p class="indent">The creature must succeed on a Wisdom saving throw against your spell save DC or be frightened of you until the start of your next turn.</p>
+			<p>Once you use this feature you can't use it again until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Whenever you score a critical hit or reduce a creature to 0 hit points, you can choose one or more creatures that you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). All the chosen creatures are affected by one of the following effects of your choice: The creature gains temporary hit points equal to 1d6 + your Charisma modifier (minimum of 1 temporary hit point), OR The creature must succeed on a Wisdom saving throw against your spell save DC or be frightened of you until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Glorious Defense" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_GLORIOUS_DEFENSE">
+		<description>
+			<p><em>15th-level Oath of Heroism feature</em></p>
+			<p>your blessed glory on the battlefield can misdirect an attack. When a creature you can see hits you with an attack roll, you can use your reaction to gain a bonus to AC against that attack, potentially causing it to miss you. The bonus equals your Wisdom modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see hits you with an attack roll, you can use your reaction to gain a +{{glorious defense:ac}} bonus to AC against that attack, potentially causing it to miss you. If the attack misses, you can make one weapon attack against the attacker as part of this reaction.</description>
+		</sheet>
+		<rules>
+			<stat name="glorious defense:ac" value="1" bonus="base" />
+			<stat name="glorious defense:ac" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Living Myth" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_OATH_OF_HEROISM_LIVING_MYTH">
+		<description>
+			<p><em>20th-level Oath of Heroism feature</em></p>
+			<p>You can empower yourself with the legends—whether true or exaggerated—of your great deeds. As a bonus action, you gain the following benefits for 10 minute:</p>
+			<ul>
+				<li>You are blessed with an otherworldly presence, gaining advantage on all Charisma checks.</li>
+				<li>Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.</li>
+				<li>If you fail a saving throw, you can use your reaction to reroll it. You must use this new roll.</li>
+			</ul>
+			<p>Once you use this bonus action, you can’t use it again until you finish a long rest</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You gain the following benefits for 1 minute:
+			You are blessed with an otherworldly presence, gaining advantage on all Charisma checks.
+			Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.
+			If you fail a saving throw, you can use your reaction to reroll it. You must use this new roll.</description>
+		</sheet>
+	</element>	
 </elements>
