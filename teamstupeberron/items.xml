@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -484,6 +484,24 @@
 			<set name="rarity">Legendary</set>
 			<set name="weapon">Longsword</set>
 			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+	<element name="Axe of Glory" type="Magic Item" source="Team StupEberron" id="ID_TSE_WEAPON_AXE_OF_GLORY">
+		<description>
+			<p>GLORY!</p>
+			<p class="indent"><strong><em>GLORY.</em></strong> Glory Details.</p>
+			<p class="indent"><strong><em>GLORY.</em></strong> Glory Details.</p>
+		</description>
+		<setters>
+			<set name="keywords">axe, sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any axe or sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
 		</setters>
 	</element>
 </elements>
