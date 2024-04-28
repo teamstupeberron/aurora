@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="1.0.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -88,7 +88,7 @@
 			<stat name="charisma" value="1" />
 			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_MARK_OF_SHADOW_CUNNING_INTUITION" />
 			<grant type="Racial Trait" id="ID_TSE_RACIAL_TRAIT_MARK_OF_SHADOW_SHAPE_SHADOWS" />
-			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_MARK_OF_SHADOW_SPELLS_OF_THE_MARK" />
+			<grant type="Racial Trait" id="ID_TSE_RACIAL_TRAIT_MARK_OF_SHADOW_SPELLS_OF_THE_MARK" />
 		</rules>
 	</element>
 	<element name="Shape Shadows" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_MARK_OF_SHADOW_SHAPE_SHADOWS">
@@ -104,4 +104,37 @@
 			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" />
 		</rules>
 	</element>
+	
+	
+	
+	<element name="Spells of the Mark" type="Racial Trait" source="Team StupEberron" id="ID_TSE_RACIAL_TRAIT_MARK_OF_SHADOW_SPELLS_OF_THE_MARK">
+		<description>
+			<p>If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Shadow Spells table are added to the spell list of your spellcasting class.</p>
+			<h5>Mark of Shadow Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>disguise self, silent image</em></td></tr>
+				<tr><td>2nd</td><td><em>darkness, pass without trace</em></td></tr>
+				<tr><td>3rd</td><td><em>clairvoyance, major image</em></td></tr>
+				<tr><td>4th</td><td><em>greater invisibility, hallucinatory terrain</em></td></tr>
+				<tr><td>5th</td><td><em>mislead</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The spells on the Mark of Shadow Spells table are added to the spell list of your spellcasting class.</description>
+		</sheet>
+		<spellcasting all="true" extend="true">
+			<extend>ID_PHB_SPELL_DISGUISE_SELF</extend>
+			<extend>ID_PHB_SPELL_SILENT_IMAGE</extend>
+			<extend>ID_PHB_SPELL_DARKNESS</extend>
+			<extend>ID_PHB_SPELL_PASS_WITHOUT_TRACE</extend>
+			<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+			<extend>ID_PHB_SPELL_MAJOR_IMAGE</extend>
+			<extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+			<extend>ID_PHB_SPELL_HALLUCINATORY_TERRAIN</extend>
+			<extend>ID_PHB_SPELL_MISLEAD</extend>
+		</spellcasting>
+	</element>	
 </elements>	
