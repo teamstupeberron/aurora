@@ -3,7 +3,7 @@
 	<info>
 		<name>Luminous</name>
 		<description>The Luminous class from Team Stupeberron</description>
-		<update version="1.0.1">
+		<update version="1.0.5">
 			<file name="monk-paladin(stupeberron).xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/monk-paladin(stupeberron).xml" />
 		</update>
 	</info>
