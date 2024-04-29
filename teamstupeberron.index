@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
 		<name>Team StupEberron</name>
 		<description>Custom content to play 5th Edition in the Team Stupendous Eberron world.</description>
-		<update version="0.1.7">
+		<update version="1.0.5">
 			<file name="teamstupeberron.index" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron.index" />
 		</update>
 	</info>
@@ -16,6 +16,10 @@
 		<file name="tashas-cauldron-of-everything.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/tashas-cauldron-of-everything.xml" />
 		<file name="background-ascetic.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/background-ascetic.xml" />
 		<file name="changeling(stupeberron).xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/changeling(stupeberron).xml" />
-		<file name="monk-paladin(stupeberron).xml.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/monk-paladin(stupeberron).xml" />
+		<file name="monk-paladin(stupeberron).xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/monk-paladin(stupeberron).xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/spells.xml" />
+		<file name="shieldcleric.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/shieldcleric.xml" />
+		<file name="race-aarakocra.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/race-aarakocra.xml" />
+		<file name="wise-bard(stupeberron).xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/wise-bard(stupeberron).xml" />
 	</files>
 </index>
