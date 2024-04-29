@@ -178,7 +178,7 @@
 		<sheet display="false">
 			<description>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music.</description>
 		</sheet>
-		<spellcasting name="Wise-Bard" ability="Wisdom" prepare="false" allowReplace="true">
+		<spellcasting name="Bard" ability="Wisdom" prepare="false" allowReplace="true">
 			<list>Bard</list>
 		</spellcasting>
 		<rules>
