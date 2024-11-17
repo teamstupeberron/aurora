@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<info>
+		<name>BlessingsAndBoons</name>
+		<description>Blessings And Boons from Team Stupeberron</description>
+		<update version="1.1.0">
+			<file name="blessingsandboons.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/blessingsandboons.xml" />
+		</update>
+	</info>
+	
+	<element name="Blessing of Resistance (Piercing)" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BLESSING_OF_RESISTANCE_PIERCING">
+		<description>
+			<p>You gain resistance to piercing damage.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+		</rules>
+	</element>
+	
+	<element name="Blessing of Strength" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BLESSING_OF_STRENGTH">
+		<description>
+			<p>Your Strength score increases by 2, up to a maximum of 22.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="2" />
+			<stat name="strength:max" value="22" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Blessing of Divine Will" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BLESSING_OF_DIVINE_WILL">
+		<description>
+			<p>Your spell save DC and spell attack Modifier increases by 1.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Blessing</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+			<stat name="spellcasting:dc" value="1" />
+		</rules>
+	</element>
+	
+	<element name="Blessing of Revelation" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BLESSING_OF_REVELATION">
+		<description>
+			<p>Once per long rest, as a bonus action, you can activate an aura that sheds bright light in a 15 foot radius and dim light for an additional 15 foot radius. This light is only visible to you. Any invisible creatures or objects in the aura become visible to you. This lasts until your next rest (short or long).</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	
+	<element name="Blessing of Divine Retribution" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BLESSING_OF_DIVINE_RETRIBUTION">
+		<description>
+			<p>You can use a reaction to add 2d8 radiant damage to a single weapon attack (yours or someone else’s) twice per long rest. If the target of the attack is undead, it takes an additional 1d8 radiant damage.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	
+	<element name="Blessing of The Raising Hand" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BLESSING_OF_THE_RAISING_HAND">
+		<description>
+			<p>You can use an action to target a creature forced to make death saving throws. The creature is immediately revived with full health. You gain two levels of exhaustion and cannot invoke this blessing again for 14 days.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	
+</elements>
