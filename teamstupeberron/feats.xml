@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.2">
+		<update version="1.1.1">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/feats.xml" />
 		</update>
 	</info>
@@ -300,6 +300,26 @@
 			<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
 			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_MIND_SLIVER" />
 			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" />
+		</rules>
+	</element>
+	
+	
+	
+	<element name="You can Ki-ep it" type="Feat" source="Team StupEberron" id="ID_TSE_FEAT_YOU_CAN_KIEP_IT">
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_MONK_KI</requirements>
+		<prerequisite>Monk Ki Feature</prerequisite>
+		<description>
+			<p><em>Prerequisite: Monk Ki Feature</em></p>
+			<p><em>Prerequisite: DM Permission and making a sacrifice to save the Khalishtar</em></p>
+			<p>You have permanently sacrificed one of your Ki points to aid in the ritual to free the Khalishtar from their curse.</p>
+		</description>
+		<sheet>
+			<description>
+			You have lost one key point permanently.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="ki:points" value="-1" />
 		</rules>
 	</element>
 </elements>	

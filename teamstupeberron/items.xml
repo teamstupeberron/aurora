@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.5">
+		<update version="1.1.1">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -519,7 +519,7 @@
 	</element>
 	
 	
-	<element name="Ring of Spell Storing (LoosenedP" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_RING_OF_SPELL_STORING">
+	<element name="Ring of Spell Storing (Loosened)" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_RING_OF_SPELL_STORING">
 		<description>
 			<p>This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 7 levels worth of spells at a time. When found, it contains 1d6 - 1 levels of stored spells chosen by the GM. It has since been modified with a Loosening Arcane Unguent, incresaing it's capacity from 5 levels to 7.</p>
 			<p class="indent">Any creature can cast a spell of 1st through 7th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.</p>
@@ -533,5 +533,84 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
+	
+	
+	<element name="MournBlade" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_MOURNBLADE">
+		<description>
+			<p>The blade of this longsword is made of the strongest infernal iron in the Nine Hells, and it is engraved with infernal runes that represent the blessing of Ravanna. Its sharp and dangerous looking gold guard has a deep orange, feline-like blazing eye in the center that seems to be aware of everything in its surroundings and apperas to be constnatly scheming.
+			</p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this sword. If you score a critical hit with it, the target takes 2d8 extra psychic damage and has disadvantage on Wisdom checks and saving throws until the start of its next turn.
+			</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> Mourneblade is a sentient lawful evil weapon with an Intelligence of 15, a Wisdom of 16, and a Charisma of 20. It has hearing and darkvision out to a range of 120 feet.</p>
+			<p>The weapon communicates telepathically with its wielder and can speak, read, and understand Common and Infernal.</p>
+			<p class="indent"><strong><em>Personality.</em></strong> The soul of a fierce and narcissistic naityan rakshasa named Prahasta lives within the Mournblade. He was an evil paladin, herald of Ravanna, and chief commander of one of the biggest fiendish armies during the Blood War.</p>
+			<p>The weapon abhors demons and any of their creations that led to its fatal demise. It talks in a superior, tyrannical, and strategist tone of voice, but it complements its wielder whenever they deal the killing blow against a creature.</p>
+			<p class="indent"><strong><em>Battle Standard of Laments.</em></strong> You call upon a giant spectral fiery battle standard that saps the enemies' moral in combat by filling their minds with sorrow and grief. Before rolling for initiative, you can use reaction to create a 15-foot radius sphere centered on a point withing 60 feet of you. Creatures within that area must make a DC18 Wisdom saving throw or be influenced by the spectral banner, and subtract 1d6 from the initiative roll. The result can't be reduced lower than a 1.</p>
+			<p>Once you use this feature, you can't do so again until you complete a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement" addition="by a non-good aligned creature">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+	
+	
+	<element name="Pendant of the Life Drinker" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_PENDANT_OF_THE_LIFE_DRINKER">
+		<description>
+			<p>This velvet pendant was crafted by cunning vampires to make mortals succumb to the appeal of the exquisite delight that is blood.</p>
+			<p>When attuned to this necklace, you become capable of draining the life of your foes. You can replace one of your melee attacks by a fang attack. Make a melee weapon attack using your strength of Dexterity, on a hit this attack deals 3d8 necrotic damage and you regain a number of hit points equal to the necrotic damage dealt.</p>
+			<p>Once per day, whne you should fall to 0 hit points or lower, you can use your reaction to make this attack.</p>
+			<p class="indent"><strong><em>Curse - Blood Call:</em></strong> After feeding more than 3 times on blood in a day you must succeed on a DC 12 Wisdom saving throw or fall into blood lust for the next 8 hours. Each time you feed on blood after that, the DC increases by 3. When you finish a long rest, it resets.</p>
+			<p>While blood lusted you fall under your GM's control and become a bloodthirsty beast with no recognition of friends or foes. Only feeding on blood matters to you. During that period you attract vampires within a 3 mile radius which will try to turn you into one of them. If you survive this curse without becoming a vampire or thrall, the pendant loses all power.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">neck</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	
+	
+	<element name="Quiver of Endless Arrows +1" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_QUIVER_OF_ENDLESS_ARROWS">
+		<description>
+			<p>This enchanted quiver appears to hold 20 arrows or bolts. When one is removed, another one magically appears in its place moments later.</p>
+			<p>While attuned to this quiver, ammunition used from it is automatically replaced as it is used. The ammunition produced by the quiver is only considered magical to the attuned, and if taken out of the quiver, it disappears after 1 minute. You have a +1 bonus to attack and damage rolls made with ranged weapons with these arrows.</p>
+			<p>Poisons and oils may still be applied to individual arrows, which retain their potency while in the quiver for the duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	
+	
+    <element name="Etherling(Mourned)" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_ETHERLING_MOURNED">
+        <description>
+            <p>What was formerly a whisp of what appears to be cotton but was actually a cloud now cycles between states of being - cloud, hail, water, steam, and back to cloud. By attuning with the command word "Etherling", it hovers around your head and can be moved with concentration. Each utterance of the command word causes it to cycle to the next phase. Belongs to Bharush. Prophetic!</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">misc</set>
+        </setters>
+    </element> 
 	
 </elements>

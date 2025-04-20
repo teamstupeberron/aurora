@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Untamed Weave</name>
+		<description>Way of the Untamed Weave monk archetype from Team Stupeberron</description>
+		<update version="1.1.1">
+			<file name="wayoftheuntamedweave.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/wayoftheuntamedweave.xml" />
+		</update>
+	</info>
+	
+	
+    <element name="Way of the Untamed Weave" type="Archetype" source="Team StupEberron" id="ID_TSE_ARCHETYPE_WAY_OF_THE_UNTAMED_WEAVE">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>Monks of the Way of the Untamed Weave learn to bolster their ki with the unfettered chaos of the arcane. While still maintaining the discipline and inner mastery that defines a monk, those who follow the Way of the Untamed Weave must also study the complex nature of wild magic, using meditation to infuse their soul, and thus their ki, with chaotic magical essence.</p>
+            <div element="ID_TSE_ARCHETYPE_FEATURE_MAGICAL_STUDY" />
+            <div element="ID_TSE_ARCHETYPE_FEATURE_WILD_FIGHTING" />
+            <div element="ID_TSE_ARCHETYPE_FEATURE_WILD_KI_SURGE" />
+            <div element="ID_TSE_ARCHETYPE_FEATURE_DEFLECT_MAGIC" />
+            <div element="ID_TSE_ARCHETYPE_FEATURE_DISPELLING_TOUCH" />
+        </description>
+		<sheet display="false">
+            <description>Allows wild manipulation of magical energies using Ki</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_MAGICAL_STUDY" level="3"/>
+            <grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_WILD_FIGHTING" level="3"/>
+            <grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_WILD_KI_SURGE" level="3"/>
+            <grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_DEFLECT_MAGIC" level="6"/>
+            <grant type="Archetype Feature" id="ID_TSE_ARCHETYPE_FEATURE_DISPELLING_TOUCH" level="11"/>
+        </rules>
+    </element>
+    <element name="Magical Study" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_MAGICAL_STUDY">
+        <description>
+		    <p>You gain proficiency in the Arcana skill, and you can use your wisdom modifier in place of your Intelligence modifier when making checks using this skill.</p>
+			<p>Additionally, you have advantage on Wisdom saving throws against spells as long as you can see the spell being cast. To gain this benefit, you can't be blinded, deafened, or incapacitated.</p>
+        </description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+            <stat name="arcana:misc" value="wisdom:modifier"/>
+            <stat name="arcana:misc" value="-intelligence:modifier"/>
+        </rules>
+		<sheet display="false">
+			<description>You gain proficiency in the Arcana skill, and you can use your wisdom modifier in place of your Intelligence modifier when making checks using this skill. Additionally, you have advantage on Wisdom saving throws against spells as long as you can see the spell being cast. To gain this benefit, you can't be blinded, deafened, or incapacitated.
+			</description>
+		</sheet>
+    </element>
+	
+    <element name="Wild Fighting" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_WILD_FIGHTING">
+        <description>
+		    <p>The intersection of your Ki and the chaos of the weave can trigger unexpected results in combat.</p>
+			<p>Whenever you make an attack, add one to a "Wild Magic Target" that starts at 0 during each encounter. Anytime your attack roll is less than your current Wild Magic Target, a Wild Magic Surge is triggered.  Critical Failures automatically trigger a Wild Magic Surge. Critical Hits reset the Wild Magic Target back to 0, however you may choose to activate a Wild Magic Surge.</p>
+			<p>Whenever a Wild Magic Surge is activated, the Target resets back to 0.</p>
+        </description>
+        <sheet display="false">
+            <description>The intersection of your Ki and the chaos of the weave can trigger unexpected results in combat. Whenever you make an attack, add one to a "Wild Magic Target" that starts at 0 during each encounter. Anytime your attack roll is less than your current Wild Magic Target, a Wild Magic Surge is triggered.  Critical Failures automatically trigger a Wild Magic Surge. Critical Hits reset the Wild Magic Target back to 0, however you may choose to activate a Wild Magic Surge. Whenever a Wild Magic Surge is activated, the Target resets back to 0.</description>
+        </sheet>
+    </element>
+	
+    <element name="Wild Ki Surge" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_WILD_KI_SURGE">
+        <description>
+		    <p>Your ki is infused with the chaos of the weave. Choose one of the damage types on the Wild Ki table to be your preferred damage type. When you use your Flurry of Blows, roll on the Wild Ki table for each attack to determine its damage type.</p>
+			<p>If you roll your preferred type on either attack, it activates a Wild Ki Surge using that damage type.  Alternatively, if you roll the same non preferred type on both attacks, you also activate a Wild Ki Surge.</p>
+			<p>When activating a Wild Ki Surge, the magic of the weave surges through your ki and you are wreathed in arcane energy. For the next minute, you gain temporary hit points equal to your monk level, and any creature within 5 feet that makes a melee attack against you takes damage equal to one roll of your martial arts die, the damage type of which is determined by what you rolled on the Wild Ki table.</p>
+			<p>You can only have one instance of this feature active at a time, however if you roll your preferred damage type on both attacks, it activates once with double the effect.</p>
+			
+			<table>
+				<thead><tr><td>Wild Ki d8</td><td>Damage Type</td></tr></thead>
+				<tbody>
+					<tr><td>1</td><td>Acid</td></tr>
+					<tr><td>2</td><td>Cold</td></tr>
+					<tr><td>3</td><td>Fire</td></tr>
+					<tr><td>4</td><td>Force</td></tr>
+					<tr><td>5</td><td>Lightning</td></tr>
+					<tr><td>6</td><td>Poison</td></tr>
+					<tr><td>7</td><td>Psychic</td></tr>
+					<tr><td>8</td><td>Thunder</td></tr>
+					<tr><td>Silver</td><td>Cold</td></tr>
+				</tbody>
+			</table>
+        </description>
+		<sheet display="false">
+			<description>Your ki is infused with the chaos of the weave. Choose one of the damage types on the Wild Ki table to be your preferred damage type. When you use your Flurry of Blows, roll on the Wild Ki table for each attack to determine its damage type. If you roll your preferred type on either attack, it activates a Wild Ki Surge using that damage type.  Alternatively, if you roll the same non preferred type on both attacks, you also activate a Wild Ki Surge. When activating a Wild Ki Surge, the magic of the weave surges through your ki and you are wreathed in arcane energy. For the next minute, you gain temporary hit points equal to your monk level, and any creature within 5 feet that makes a melee attack against you takes damage equal to one roll of your martial arts die, the damage type of which is determined by what you rolled on the Wild Ki table. You can only have one instance of this feature active at a time, however if you roll your preferred damage type on both attacks, it activates once with double the effect.
+			</description>
+		</sheet>
+    </element>
+	
+	
+    <element name="Deflect Magic" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_DEFLECT_MAGIC">
+        <description>
+			<p>Your ki has become so infused with the arcane that you can interact directly with the weave. When targeted with a spell, as your reaction you may roll 1d10 + wisdom Modifier + monk level. If that is greater than the DC of the spell, add the difference of the two values to your saving throw against the spell.</p>
+			<p class="indent">If you save successfully, the spell is safely deflected.</p>
+			<p class="indent">If you save by more than the value you added, you may spend a ki point to redirect the spell back to them.</p>
+			<p>When targeted by a spell using an attack roll, you may instead react to the damage from that spell with the monk Deflect Missiles ability.</p>
+        </description>
+        <sheet display="false">
+            <description>Your ki has become so infused with the arcane that you can interact directly with the weave. When targeted with a spell, as your reaction you may roll 1d10 + wisdom Modifier + monk level. If that is greater than the DC of the spell, add the difference of the two values to your saving throw against the spell.
+				- If you save successfully, the spell is safely deflected.
+				- If you save by more than the value you added, you may spend a ki point to redirect the spell back to them.
+			When targeted by a spell using an attack roll, you may instead react to the damage from that spell with the monk Deflect Missiles ability.
+			</description>
+        </sheet>
+    </element>
+	
+	
+	
+	
+    <element name="Dispelling Touch" type="Archetype Feature" source="Team StupEberron" id="ID_TSE_ARCHETYPE_FEATURE_DISPELLING_TOUCH">
+        <description>
+			<p>You can channel the power of the Void to disrupt spells. You can spend 3 ki points to cast counterspell or dispel magic at 3rd-level, using Wisdom as your spellcasting modifier.</p>
+        </description>
+        <sheet display="false">
+            <description>You can channel the power of the Void to disrupt spells. You can spend 3 ki points to cast counterspell or dispel magic at 3rd-level, using Wisdom as your spellcasting modifier.</description>
+        </sheet>
+    </element>
+	
+</elements>

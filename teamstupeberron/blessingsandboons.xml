@@ -4,7 +4,7 @@
 	<info>
 		<name>BlessingsAndBoons</name>
 		<description>Blessings And Boons from Team Stupeberron</description>
-		<update version="1.1.0">
+		<update version="1.1.1">
 			<file name="blessingsandboons.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/blessingsandboons.xml" />
 		</update>
 	</info>
@@ -84,6 +84,21 @@
 			<set name="type">Epic Boon</set>
 			<set name="slot">gift</set>
 		</setters>
+	</element>
+	
+	<element name="Boon of the Shadow Dancer" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BOON_OF_THE_SHADOW_DANCER">
+		<description>
+			<p>As a noble of House Phiarlan, you are capable of performing the Dance of the 20 Shadows. You may cast the spells <em>Darkness</em> and <em>Mirror Image</em>, each once per day. </p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" />
+		</rules>
 	</element>
 	
 </elements>
