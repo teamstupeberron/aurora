@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.1.1">
+		<update version="1.1.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/items.xml" />
 		</update>
 	</info>
@@ -265,8 +265,24 @@
 			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
-	
-	
+	<element name="Silver Armor of Astral Projection + 2" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_SILVER_ARMOR_OF_ASTRAL_PROJECTION">
+		<description>
+			<p>You have advantage on saving throws on spells that targets you and no other creature, and all spell attacks made against you are made at disadvantage.</p>
+			<p class="indent"><em>Astral Reflection of Brilliance.</em> When you are the target of a spell that targets you and no other creature, as a reaction to this spell being cast, you may reflect the spell back at the caster, with the spell being centered on the caster. The spell has the same spell attack or spell save DC as the caster's spell attack or spell save DC. Once this property has been used, it can't be used again until the next dawn</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Silver {{parent}} of Astral Projection</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+		</rules>
+	</element>
 	
 	<element name="Breaker Breastplate" type="Magic Item" source="Team StupEberron" id="ID_TSE_MAGIC_ITEM_BREAKER_BREASTPLATE">
 		<description>
@@ -330,6 +346,32 @@
 			<set name="weight" lb="4">4 lb.</set>
 			<set name="stackable">true</set>
 		</setters>
+	</element>
+	
+	
+	
+	<element name="Red Riding Cloak of Resistance +2" type="Magic Item" source="Team StupEberron" id="ID_TSEW_MAGIC_ITEM_RED_RIDING_CLOAK_OF_RESISTANCE_2">
+		<description>
+			<p>You gain a +2 bonus to saving throws while you wear this cloak, taken from a girl on her way to grandmothers house.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, armor, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>		
+			<stat name="strength:save:misc" value="2" />
+			<stat name="dexterity:save:misc" value="2" />
+			<stat name="constitution:save:misc" value="2" />
+			<stat name="intelligence:save:misc" value="2" />
+			<stat name="wisdom:save:misc" value="2" />
+			<stat name="charisma:save:misc" value="2" />
+		</rules>
 	</element>
 	
 	

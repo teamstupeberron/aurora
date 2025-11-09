@@ -3,7 +3,7 @@
 	<info>
 		<name>Twilock</name>
 		<description>The Twilock class from Team Stupeberron</description>
-		<update version="1.1.2">
+		<update version="1.1.3">
 			<file name="twilock.xml" url="https://raw.githubusercontent.com/teamstupeberron/aurora/main/teamstupeberron/twilock.xml" />
 		</update>
 	</info>
@@ -277,6 +277,30 @@
 			<description>You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature.</description>
 		</sheet>
 	</element>
+	
+	
+	
+	<element name="Pact of the Guard" type="Class Feature" source="Team StupEberron" id="ID_TSE_CLASS_FEATURE_TWILOCK_PACT_BOON_PACT_OF_THE_GUARD">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>As a Bonus Action, you can conjure pact armor onto your body—armor of your choice with which you bond. Until the bond ends, you have proficiency with the armor, and you can use it as a Spellcasting Focus.</p>
+			<p class="indent">Your bond with the armor ends if the armor is more than 5 feet away from you for 1 minute or more, or if you die. Conjured armor disappears when the bond ends.</p>
+			<p class="indent">You may be bonded to up to three sets of armor at once.</p>
+		</description>
+		<sheet usage="Bonus Action">
+			<description>As a Bonus action, you can conjure one of your 3 sets of pact armor onto your body and are proficient with it. Your bond with the armor ends if the armor is more than 5 feet away from you for 1 minute or more, or if you die. Conjured armor disappears when the bond ends. </description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	
+	
+	
+	
+	
 
 	<element name="Pact of the Chain" type="Class Feature" source="Team StupEberron" id="ID_TSE_CLASS_FEATURE_TWILOCK_PACT_BOON_PACT_OF_THE_CHAIN">
 		<supports>Pact Boon</supports>
